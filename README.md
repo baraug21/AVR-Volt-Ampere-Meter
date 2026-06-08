@@ -31,7 +31,7 @@ A digital, microcontroller-based multimeter capable of measuring voltage and cur
 ## How It Works (Software Logic)
 
 1. **Initialization:** On the very first boot, the MCU checks the EEPROM. If unprogrammed (`65535`), it loads the default zero-point calibration constants for both voltage and current.
-2. **ADC Conversion:** The system uses the built-in Analog-to-Digital Converter to sample voltage and current channels sequentially, taking a 1000 measurements to smooth out the noise and using a deadband which eliminates flickering of the last digit.
+2. **ADC Conversion:** The system uses the built-in Analog-to-Digital Converter to sample voltage or current channel depending on the selected mode, taking a 1000 measurements to smooth out the noise and using a deadband which eliminates flickering of the last digit.
 3. **Multiplexing:** The display logic runs via rapid switching of the transistor pins, updating one digit at a time so fast that the human eye sees a steady 4-digit number.
 4. **Calibration Save:** Holding down both buttons pushes the current ADC reading as the new "Zero Reference" directly into the non-volatile EEPROM memory.
 
