@@ -8,7 +8,7 @@ A digital, microcontroller-based multimeter capable of measuring voltage and cur
 - **Current Measurement Mode:** Measures current with directional LED indication.
 - **Multiplexed 8-Segment Display:** Efficient display control using 4 transistors to cycle through digits dynamically.
 - **EEPROM Storage:** Auto-calibrates zero-point references on the first boot and updates thresholds dynamically when saving.
-- **Data Hold:** Freezes the current measurement on the screen.
+- **Data Hold:** Freezes the current measurement on the screen and repeatedly toggles the LED.
 - **English Codebase:** Fully documented and clean C code matching industry standards for embedded systems.
 
 ## Demo
