@@ -23,6 +23,13 @@ A digital, microcontroller-based multimeter capable of measuring voltage and cur
 - Status LED: Connected to PB2
 - Clock: External 12 MHz crystal oscillator (`F_CPU 12000000`)
 
+## Hardware & PCB Design
+
+The schematics and PCB layout were originally designed in **Protel 99 SE**. 
+Due to a system reformat, the source project files are no longer available; however, full schematic and PCB board screenshots have been preserved.
+
+You can view the schematic and PCB images in the [`hardware/`](hardware/) directory.
+
 ## Project Structure
 
 - `main.c` - Core logic, ADC measurements, state machine for buttons, calibration, and EEPROM management.
